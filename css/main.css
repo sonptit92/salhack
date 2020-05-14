@@ -229,17 +229,21 @@ body {
 #homepage-wrapper #section-1 .section-btn {
   text-transform: uppercase;
   display: table;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 #homepage-wrapper #section-1 .section-btn a {
+  width: 220px;
   color: #fff;
   text-align: center;
   display: block;
   font-size: 22px;
   letter-spacing: 1px;
   padding: 10px 60px 10px 20px;
-  background: #c95c5c url("../img/icon-java.png") no-repeat 95% center;
+  background-color: #c95c5c;
+  background-repeat: no-repeat;
+  background-position: 95% center;
   border-bottom: 5px solid #904040;
+  background-size: auto 60%;
   border-radius: 8px;
 }
 #homepage-wrapper #section-1 .section-btn a:hover {
@@ -451,7 +455,7 @@ body {
     margin-top: 30px;
   }
 }
-@media (max-width: 1440px) and (max-height: 700px) {
+@media (max-width: 1440px) and (max-height: 780px) {
   #homepage-wrapper .section-title h2 {
     font-size: 60px;
   }
@@ -476,25 +480,6 @@ body {
   }
   #homepage-wrapper #section-1 .section-header h3 {
     font-size: 30px;
-  }
-  #homepage-wrapper #section-1 .section-btn {
-    text-transform: uppercase;
-    display: table;
-    margin: 0 auto;
-  }
-  #homepage-wrapper #section-1 .section-btn a {
-    color: #fff;
-    text-align: center;
-    display: block;
-    font-size: 22px;
-    letter-spacing: 1px;
-    padding: 10px 60px 10px 20px;
-    background: #c95c5c url("../img/icon-java.png") no-repeat 95% center;
-    border-bottom: 5px solid #904040;
-    border-radius: 8px;
-  }
-  #homepage-wrapper #section-1 .section-btn a:hover {
-    background-color: rgba(201, 92, 92, 0.8);
   }
   #homepage-wrapper #section-1 .section-menu nav ul li {
     padding: 0 70px;
