@@ -160,7 +160,7 @@ body {
           background-repeat: no-repeat;
           background-position: 95% center;
           border-bottom: 5px solid #904040;
-          background-size: auto 60% ;
+          background-size: auto 60%;
           @extend %transition;
           border-radius: 8px;
 
@@ -472,9 +472,6 @@ body {
     }
 
     #section-1 {
-      background: url("../img/bg-ss-1.jpg") no-repeat;
-      background-size: cover;
-
       .section {
         &-header {
           margin-bottom: 10vh;
@@ -494,7 +491,6 @@ body {
             font-size: 30px;
           }
         }
-
 
 
         &-menu {
@@ -597,6 +593,158 @@ body {
         }
 
         &-license {
+          padding: 10px;
+          font-size: 18px;
+
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 580px) {
+  #homepage-wrapper {
+    .section-title {
+      h2 {
+        font-size: 40px;
+        padding-bottom: 15px;
+      }
+
+    }
+
+    .section-content {
+      ul.list-item {
+        flex-wrap: wrap;
+
+        li {
+          @include flex-width(100%);
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    #section-1 {
+
+      .section {
+        &-header {
+          h1 {
+            a {
+
+              img {
+                max-width: 60vw;
+              }
+            }
+          }
+
+          h3 {
+            font-size: 30px;
+
+            &:after {
+              right: -80px;
+              border-top: 5px solid transparent;
+              border-bottom: 5px solid transparent;
+              border-left: 60px solid #fff;
+            }
+
+            &:before {
+              left: -80px;
+              border-top: 5px solid transparent;
+              border-bottom: 5px solid transparent;
+              border-right: 60px solid #fff;
+            }
+          }
+        }
+
+        &-btn {
+          a {
+            font-size: 18px;
+          }
+        }
+
+        &-menu {
+          nav {
+            ul {
+              li {
+                padding: 0 20px;
+                position: relative;
+
+                a {
+                  font-size: 18px;
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #section-2 {
+      .section {
+        &-image {
+          ul {
+            flex-wrap: wrap;
+
+            li {
+              @include flex-width(100%);
+              margin-bottom: 30px;
+            }
+          }
+        }
+
+        &-content {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    #section-3 {
+      .section {
+        &-image {
+          ul {
+            flex-wrap: wrap;
+
+            li {
+              @include flex-width(100%);
+            }
+          }
+        }
+      }
+    }
+
+    #section-4 {
+
+      .section {
+        &-content {
+          margin-top: 30px;
+
+          ul.list-item {
+
+            li {
+              .item {
+                &-title {
+                  font-size: 20px;
+                  padding-bottom: 20px;
+                  margin-bottom: 20px;
+
+                }
+
+                &-content {
+                  &-pic {
+                    width: 120px;
+                    height: 120px;
+
+                  }
+
+                }
+              }
+            }
+          }
+        }
+
+        &-license {
+          position: static;
           padding: 10px;
           font-size: 18px;
 
