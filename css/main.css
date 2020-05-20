@@ -108,6 +108,12 @@ body {
   font-size: 20px;
   line-height: 1.4;
   overflow: hidden;
+  width: 100vw;
+}
+
+main {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 #homepage-wrapper .section-title {
