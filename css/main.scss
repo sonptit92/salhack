@@ -13,10 +13,7 @@ body {
   overflow: hidden;
   width: 100vw;
 }
-main{
-  width: 100vw;
-  overflow-x:hidden ;
-}
+
 
 #homepage-wrapper {
   .section-title {
@@ -609,6 +606,10 @@ main{
 
 
 @media (max-width: 580px) {
+  main{
+    width: 100vw;
+    overflow-x:hidden ;
+  }
   #homepage-wrapper {
     .section-title {
       h2 {

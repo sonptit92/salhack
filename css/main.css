@@ -111,11 +111,6 @@ body {
   width: 100vw;
 }
 
-main {
-  width: 100vw;
-  overflow-x: hidden;
-}
-
 #homepage-wrapper .section-title {
   display: table;
   margin: 10px auto 50px auto;
@@ -530,6 +525,11 @@ main {
   }
 }
 @media (max-width: 580px) {
+  main {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
   #homepage-wrapper .section-title h2 {
     font-size: 40px;
     padding-bottom: 15px;
